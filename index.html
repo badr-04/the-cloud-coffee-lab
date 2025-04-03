@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cloud Coffee Lab | Artisan Coffee & Matcha</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        
+        :root {
+            --primary: #6F4E37; 
+            --secondary: #6F4E37; 
+            --accent: #E3B574; 
+            --light: #F5F5F5;
+            --dark: #333333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color:rgba(255, 206, 116, 0.479);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .logo {
+            width: 120px;
+            margin-bottom: 1.5rem;
+            border:solid;
+            border-radius: 100px;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--dark);
+            padding: 0.8rem 1.8rem;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary);
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: var(--secondary);
+            margin: 0.5rem auto;
+        }
+        
+        .menu-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        
+        .category {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .category:hover {
+            transform: translateY(-10px);
+        }
+        
+        .category-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .category-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .category-info h3 {
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+        
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .social-icons {
+            margin: 1rem 0;
+        }
+        
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            color: var(--accent);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .tagline {
+                font-size: 1rem;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Screenshot_2025-04-03-20-30-14-103_com.instagram.android-edit.jpg" alt="The Cloud Coffee Lab Logo" class="logo">
+        <h1>The Cloud Coffee Lab</h1>
+        <p class="tagline">Where specialty coffee, premium matcha, and artisan desserts meet innovation in every cup and bite.</p>
+        <a href="#menu" class="btn">Explore Our Menu</a>
+    </header>
+    
+    <section id="menu" class="container">
+        <h2 class="section-title">Our Artisan Creations</h2>
+        
+        <div class="menu-categories">
+            <div class="category">
+                <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Specialty Coffee" class="category-img">
+                <div class="category-info">
+                    <h3>Specialty Coffee</h3>
+                    <p>Single-origin beans, precision brewing methods, and innovative coffee creations.</p>
+                </div>
+            </div>
+            
+            <div class="category">
+                <img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Premium Matcha" class="category-img">
+                <div class="category-info">
+                    <h3>Premium Matcha</h3>
+                    <p>Ceremonial-grade matcha prepared traditionally or in creative modern drinks.</p>
+                </div>
+            </div>
+            
+            <div class="category">
+                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Artisan Desserts" class="category-img">
+                <div class="category-info">
+                    <h3>Artisan Desserts</h3>
+                    <p>Handcrafted pastries, cakes, and sweets to complement your drink.</p>
+                </div>
+            </div>
+            
+            <div class="category">
+                <img src="https://images.unsplash.com/photo-1568649929103-28ffbefaca1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Signature Lattes" class="category-img">
+                <div class="category-info">
+                    <h3>Signature Lattes</h3>
+                    <p>Innovative latte creations with house-made syrups and premium ingredients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <h3>The Cloud Coffee Lab</h3>
+        <p>COFFEE | HOME BAKERY</p>
+        
+        <div class="social-icons">
+            <a href="https://www.instagram.com/thecloudcoffeecasa_/"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        
+        <p>&copy; 2025 The Cloud Coffee Lab. All rights reserved.</p>
+    </footer>
+</body>
+</html>
